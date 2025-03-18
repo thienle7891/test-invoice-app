@@ -8,10 +8,10 @@ const isPublic = createRouteMatcher([
 ]);
 
 // const isProtected = createRouteMatcher([
-//   '/dashboard',
-//   '/invoices/:invoiceId',
-//   '/invoices/new'
-// ])
+//   "/dashboard",
+//   "/invoices/:invoiceId",
+//   "/invoices/new",
+// ]);
 
 export default clerkMiddleware((auth, request) => {
   if (!isPublic(request)) {
